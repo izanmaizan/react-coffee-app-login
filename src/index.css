@@ -35,11 +35,11 @@ body {
 }
 
 body {
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 92vh;
   margin: 0;
   padding: none;
   font-family: 'Lato', sans-serif;
@@ -80,6 +80,21 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.home {
+  margin-top: -30px;
+  width: 390px;
+  height: 844px;
+  background: #FAF7F2;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 770px;
+
 }
 
 .first-look {
@@ -138,8 +153,34 @@ button:focus-visible {
 .st-1container {
   margin-top: -30px;
   width: 393px;
-  height: 700px;
+  height: 750px;
   background-image: url('./assets/bg-1.png');
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+/*background-size: cover;*/
+/*background-position: center center;*/
+/*background-attachment: fixed;*/
+}
+
+.st-2container {
+  margin-top: -30px;
+  width: 393px;
+  height: 750px;
+  background-image: url('./assets/bg-2.png');
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+/*background-size: cover;*/
+/*background-position: center center;*/
+/*background-attachment: fixed;*/
+}
+
+.st-3container {
+  margin-top: -30px;
+  width: 393px;
+  height: 750px;
+  background-image: url('./assets/bg-3.png');
   background-repeat: no-repeat;
   display: flex;
   align-items: end;
@@ -168,6 +209,7 @@ button:focus-visible {
 }
 
 .main span {
+  max-width: 360px;
   color: #FFF;
   text-align: center;
   font-family: Lato;
@@ -200,6 +242,12 @@ button:focus-visible {
   border: none;
 }
 
+.next:hover {
+  background: #A04B07;
+  color: white;
+  font-weight: 900;
+}
+
 .skip  {
   display: flex;
   width: 200px;
@@ -220,4 +268,31 @@ button:focus-visible {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.2px;
+}
+
+.skip:hover {
+  color: #A04B07;
+  font-weight: 900;
+}
+
+.scroll {
+  width: 50px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll .dot {
+  content: ' ';
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+}
+
+.scroll .active-dot {
+  width: 22px;
+  height: 10px;
+  border-radius: 20px;
+  background: #C85E09;
 }
