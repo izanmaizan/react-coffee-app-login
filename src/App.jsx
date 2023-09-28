@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Home from './pages/home.jsx'
-import NotFound from './pages/notfound.jsx'
+// import NotFound from './pages/notfound.jsx'
 import SignIn from './components/sign-in.jsx'
 import Regist from './components/regist.jsx'
 import StepOne from './components/stepOne.jsx'
@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/steptwo" element={<StepTwo />} />
         <Route path="/stepthree" element={<StepThree />} />
         <Route path="/back" element={<Back />} />
-        <Route path="*" element={<NotFound />} />
+        {/*<Route path="*" element={<NotFound />} />*/}
       </Routes>
     </BrowserRouter>
   )
